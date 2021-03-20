@@ -1,8 +1,11 @@
 #pragma once
 #include<vector>
 #include<string>
+#include<string.h>
 #include<iostream>
 #include<map>
+#include<algorithm>
+
 using namespace std;
 
 class Chord

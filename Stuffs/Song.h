@@ -1,9 +1,11 @@
 #pragma once
 #include <string>
+#include <string.h>
 #include <iostream>
 #include "Chord.h"
 #include <vector>
 #include <map>
+#include <algorithm>
 
 using namespace std;
 
