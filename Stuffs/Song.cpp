@@ -190,7 +190,7 @@ void Song::setSimilarSongs(string *songs, int num) {
 }
 
 void Song::setKey(char *newKey) {
-    if (key == nullptr) {
+    if (key != nullptr) {
         delete[] key;
     }
 
