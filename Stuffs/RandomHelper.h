@@ -19,6 +19,7 @@ public:
     static std::string getRandomGuest();
     static int getRandomLength();
     static std::string getRandomTopic();
+    static int getRandomNumInRange(int l, int r);
 };
 
 

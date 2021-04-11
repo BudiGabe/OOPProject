@@ -44,11 +44,11 @@ Artist& Artist::operator =(const Artist& artist) {
     return *this;
 }
 
-ostream& operator <<(ostream& out, const Artist& artist) {
-    out << "\nArtist name: " << artist.name;
+ostream& Artist::virtualPrint(ostream& out) const {
+    out << "\nArtist name: " << name;
 
     out << "\nSongs: ";
-    for(auto song : artist.songs) {
+    for(auto song : songs) {
         out << "\n" << song.getName() << endl;
         out << "\nKey: " << song.getKey();
         out << "\nProgression: ";
@@ -61,17 +61,17 @@ ostream& operator <<(ostream& out, const Artist& artist) {
     }
 
     out << "\nPodcasts: ";
-    for(auto podcast : artist.podcasts) {
+    for(auto podcast : podcasts) {
         out << podcast << endl;
     }
 
-    out << "\nFollowers: " << artist.followers;
+    out << "\nFollowers: " << followers;
     return out;
 }
 
-istream& operator >>(istream& in, Artist& artist) {
+istream& Artist::virtualRead(istream& in) {
     cout << "\nArtist name: ";
-    in >> artist.name;
+    in >> name;
 
     cout << "\nNumber of artist songs: ";
     int audioNum;
@@ -80,7 +80,7 @@ istream& operator >>(istream& in, Artist& artist) {
     for(int i = 0; i < audioNum; i++) {
         cout << "Song " << i << endl;
         in >> song;
-        artist.songs.push_back(song);
+        songs.push_back(song);
     }
 
     cout << "\nNumber of artist podcasts";
@@ -88,12 +88,22 @@ istream& operator >>(istream& in, Artist& artist) {
     Podcast podcast;
     for(int i = 0; i <audioNum; i++) {
         in >> podcast;
-        artist.podcasts.push_back(podcast);
+        podcasts.push_back(podcast);
     }
 
     cout << "\nFollowers: ";
-    in >> artist.followers;
+    in >> followers;
 
+    return in;
+}
+
+ostream &operator<<(ostream &out, const Artist &artist) {
+    artist.virtualPrint(out);
+    return out;
+}
+
+istream &operator>>(istream &in, Artist &artist) {
+    artist.virtualRead(in);
     return in;
 }
 

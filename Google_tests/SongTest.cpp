@@ -136,12 +136,11 @@ public:
         chordsCityPop.push_back(*fMajor);
 
 
-        songJazz = new Song(SONG_LENGTH1, CHORD_PROGRESSION_JAZZ, PROGRESSION_LENGTH_JAZZ, LIKED, TIER_S, KEY_C,
-                RATING_HIGH, RATING_VARIATION_LONG, VARIATION_PERIOD_LONG, VIEWS_HIGH, SONG_NAME1,
-                SIMILAR_SONGS_HIGH, NUM_OF_SIMILAR_SONGS_HIGH, SONG_NUM_DEFAULT, chordsJazz);
-        songCityPop = new Song(SONG_LENGTH2, CHORD_PROGRESSION_CITYPOP, PROGRESSION_LENGTH_CITYPOP, DISLIKED,
+        songJazz = new Song(SONG_NAME1, chordsJazz, SONG_LENGTH1, CHORD_PROGRESSION_JAZZ, PROGRESSION_LENGTH_JAZZ, LIKED, TIER_S, KEY_C,
+                RATING_HIGH, RATING_VARIATION_LONG, VARIATION_PERIOD_LONG, VIEWS_HIGH, SIMILAR_SONGS_HIGH, NUM_OF_SIMILAR_SONGS_HIGH, SONG_NUM_DEFAULT);
+        songCityPop = new Song(SONG_NAME2, chordsCityPop, SONG_LENGTH2, CHORD_PROGRESSION_CITYPOP, PROGRESSION_LENGTH_CITYPOP, DISLIKED,
                                TIER_A, KEY_A, RATING_LOW, RATING_VARIATION_SHORT, VARIATION_PERIOD_SHORT, VIEWS_LOW,
-                               SONG_NAME2, SIMILAR_SONGS_LOW, NUM_OF_SIMILAR_SONGS_LOW, SONG_NUM_DEFAULT + 1, chordsCityPop);
+                               SIMILAR_SONGS_LOW, NUM_OF_SIMILAR_SONGS_LOW, SONG_NUM_DEFAULT + 1);
     }
 
     void TearDown( ) {
@@ -390,18 +389,18 @@ TEST_F(SongTestFixture, LessThanTest) {
 
 TEST_F(SongTestFixture, GenerateSongJazzTest) {
     Song actualJazzSong = Song::generateSong(KEY_C, "minor", "Jazz", 1);
-    Song expectedJazzSong(0, CHORD_PROGRESSION_JAZZ, 3, false, 'F', KEY_CMINOR,
-                          0, nullptr, 0, 0, "Generic Song 1",
-                          nullptr, 0, 1,chordsJazz);
+    Song expectedJazzSong("Generic Song 1", chordsJazz, 0, CHORD_PROGRESSION_JAZZ, 3,
+                          false, 'F', KEY_CMINOR,0, nullptr, 0,
+                          0,nullptr, 0, 1);
 
     ASSERT_EQ(actualJazzSong, expectedJazzSong);
 }
 
 TEST_F(SongTestFixture, GenerateSongCityPopTest) {
     Song actualCityPopSong = Song::generateSong(KEY_A, "minor", "City pop", 1);
-    Song expectedCityPopSong(0, CHORD_PROGRESSION_CITYPOP, 4, false, 'F', KEY_AMINOR,
-                             0, nullptr, 0, 0, "Generic Song 1",
-                              nullptr, 0, 1,chordsCityPop);
+    Song expectedCityPopSong("Generic Song 1", chordsCityPop, 0, CHORD_PROGRESSION_CITYPOP,
+                             4, false, 'F', KEY_AMINOR,0, nullptr,
+                             0, 0,nullptr, 0, 1);
 
     ASSERT_EQ(actualCityPopSong, expectedCityPopSong);
 }
@@ -414,14 +413,13 @@ TEST_F(SongTestFixture, GenerateSongBluesTest) {
     chordsBlues.push_back(*eMinor);
 
     Song actualBluesSong = Song::generateSong(KEY_A, "minor", "Blues", 1);
-    Song expectedBluesSong(0, CHORD_PROGRESSION_BLUES, 4, false, 'F', KEY_AMINOR,
-                           0, nullptr, 0, 0, "Generic Song 1",
-                            nullptr, 0, 1, chordsBlues);
+    Song expectedBluesSong("Generic Song 1", chordsBlues, 0, CHORD_PROGRESSION_BLUES, 4,
+                           false, 'F', KEY_AMINOR,0, nullptr, 0,
+                           0,nullptr, 0, 1);
 
     ASSERT_EQ(actualBluesSong, expectedBluesSong);
 }
 
 TEST_F(SongTestFixture, GenerateSongWrongKeyTest) {
     ASSERT_ANY_THROW(Song::generateSong("H", "minor", "City pop", 1));
-    cout << (nullptr == nullptr);
 }

@@ -10,7 +10,7 @@ using namespace std;
 
 class Artist
 {
-private:
+protected:
 	string name;
 	vector<Song> songs;
 	vector<Podcast> podcasts;
@@ -23,6 +23,8 @@ public:
 	Artist(const Artist& artist);
 	~Artist();
 	Artist& operator=(const Artist& artist);
+	virtual ostream& virtualPrint(ostream& out) const;
+	virtual istream& virtualRead(istream& in);
 	friend ostream& operator <<(ostream& out, const Artist& artist);
 	friend istream& operator >>(istream& in, Artist& artist);
     Song& operator[](int index);

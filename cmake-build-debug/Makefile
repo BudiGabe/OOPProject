@@ -334,6 +334,33 @@ Stuffs\Artist.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOPProject.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOPProject.dir\Stuffs\Artist.cpp.s
 .PHONY : Stuffs\Artist.cpp.s
 
+Stuffs\AudioRecording.obj: Stuffs\AudioRecording.cpp.obj
+
+.PHONY : Stuffs\AudioRecording.obj
+
+# target to build an object file
+Stuffs\AudioRecording.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOPProject.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOPProject.dir\Stuffs\AudioRecording.cpp.obj
+.PHONY : Stuffs\AudioRecording.cpp.obj
+
+Stuffs\AudioRecording.i: Stuffs\AudioRecording.cpp.i
+
+.PHONY : Stuffs\AudioRecording.i
+
+# target to preprocess a source file
+Stuffs\AudioRecording.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOPProject.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOPProject.dir\Stuffs\AudioRecording.cpp.i
+.PHONY : Stuffs\AudioRecording.cpp.i
+
+Stuffs\AudioRecording.s: Stuffs\AudioRecording.cpp.s
+
+.PHONY : Stuffs\AudioRecording.s
+
+# target to generate assembly for a file
+Stuffs\AudioRecording.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOPProject.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOPProject.dir\Stuffs\AudioRecording.cpp.s
+.PHONY : Stuffs\AudioRecording.cpp.s
+
 Stuffs\Chord.obj: Stuffs\Chord.cpp.obj
 
 .PHONY : Stuffs\Chord.obj
@@ -360,6 +387,87 @@ Stuffs\Chord.s: Stuffs\Chord.cpp.s
 Stuffs\Chord.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOPProject.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOPProject.dir\Stuffs\Chord.cpp.s
 .PHONY : Stuffs\Chord.cpp.s
+
+Stuffs\JsonHelper.obj: Stuffs\JsonHelper.cpp.obj
+
+.PHONY : Stuffs\JsonHelper.obj
+
+# target to build an object file
+Stuffs\JsonHelper.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOPProject.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOPProject.dir\Stuffs\JsonHelper.cpp.obj
+.PHONY : Stuffs\JsonHelper.cpp.obj
+
+Stuffs\JsonHelper.i: Stuffs\JsonHelper.cpp.i
+
+.PHONY : Stuffs\JsonHelper.i
+
+# target to preprocess a source file
+Stuffs\JsonHelper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOPProject.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOPProject.dir\Stuffs\JsonHelper.cpp.i
+.PHONY : Stuffs\JsonHelper.cpp.i
+
+Stuffs\JsonHelper.s: Stuffs\JsonHelper.cpp.s
+
+.PHONY : Stuffs\JsonHelper.s
+
+# target to generate assembly for a file
+Stuffs\JsonHelper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOPProject.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOPProject.dir\Stuffs\JsonHelper.cpp.s
+.PHONY : Stuffs\JsonHelper.cpp.s
+
+Stuffs\Manelist.obj: Stuffs\Manelist.cpp.obj
+
+.PHONY : Stuffs\Manelist.obj
+
+# target to build an object file
+Stuffs\Manelist.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOPProject.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOPProject.dir\Stuffs\Manelist.cpp.obj
+.PHONY : Stuffs\Manelist.cpp.obj
+
+Stuffs\Manelist.i: Stuffs\Manelist.cpp.i
+
+.PHONY : Stuffs\Manelist.i
+
+# target to preprocess a source file
+Stuffs\Manelist.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOPProject.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOPProject.dir\Stuffs\Manelist.cpp.i
+.PHONY : Stuffs\Manelist.cpp.i
+
+Stuffs\Manelist.s: Stuffs\Manelist.cpp.s
+
+.PHONY : Stuffs\Manelist.s
+
+# target to generate assembly for a file
+Stuffs\Manelist.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOPProject.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOPProject.dir\Stuffs\Manelist.cpp.s
+.PHONY : Stuffs\Manelist.cpp.s
+
+Stuffs\Note.obj: Stuffs\Note.cpp.obj
+
+.PHONY : Stuffs\Note.obj
+
+# target to build an object file
+Stuffs\Note.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOPProject.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOPProject.dir\Stuffs\Note.cpp.obj
+.PHONY : Stuffs\Note.cpp.obj
+
+Stuffs\Note.i: Stuffs\Note.cpp.i
+
+.PHONY : Stuffs\Note.i
+
+# target to preprocess a source file
+Stuffs\Note.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOPProject.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOPProject.dir\Stuffs\Note.cpp.i
+.PHONY : Stuffs\Note.cpp.i
+
+Stuffs\Note.s: Stuffs\Note.cpp.s
+
+.PHONY : Stuffs\Note.s
+
+# target to generate assembly for a file
+Stuffs\Note.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOPProject.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOPProject.dir\Stuffs\Note.cpp.s
+.PHONY : Stuffs\Note.cpp.s
 
 Stuffs\Podcast.obj: Stuffs\Podcast.cpp.obj
 
@@ -442,6 +550,60 @@ Stuffs\Song.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOPProject.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOPProject.dir\Stuffs\Song.cpp.s
 .PHONY : Stuffs\Song.cpp.s
 
+Stuffs\Sound.obj: Stuffs\Sound.cpp.obj
+
+.PHONY : Stuffs\Sound.obj
+
+# target to build an object file
+Stuffs\Sound.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOPProject.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOPProject.dir\Stuffs\Sound.cpp.obj
+.PHONY : Stuffs\Sound.cpp.obj
+
+Stuffs\Sound.i: Stuffs\Sound.cpp.i
+
+.PHONY : Stuffs\Sound.i
+
+# target to preprocess a source file
+Stuffs\Sound.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOPProject.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOPProject.dir\Stuffs\Sound.cpp.i
+.PHONY : Stuffs\Sound.cpp.i
+
+Stuffs\Sound.s: Stuffs\Sound.cpp.s
+
+.PHONY : Stuffs\Sound.s
+
+# target to generate assembly for a file
+Stuffs\Sound.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOPProject.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOPProject.dir\Stuffs\Sound.cpp.s
+.PHONY : Stuffs\Sound.cpp.s
+
+Stuffs\TraditionalSong.obj: Stuffs\TraditionalSong.cpp.obj
+
+.PHONY : Stuffs\TraditionalSong.obj
+
+# target to build an object file
+Stuffs\TraditionalSong.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOPProject.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOPProject.dir\Stuffs\TraditionalSong.cpp.obj
+.PHONY : Stuffs\TraditionalSong.cpp.obj
+
+Stuffs\TraditionalSong.i: Stuffs\TraditionalSong.cpp.i
+
+.PHONY : Stuffs\TraditionalSong.i
+
+# target to preprocess a source file
+Stuffs\TraditionalSong.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOPProject.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOPProject.dir\Stuffs\TraditionalSong.cpp.i
+.PHONY : Stuffs\TraditionalSong.cpp.i
+
+Stuffs\TraditionalSong.s: Stuffs\TraditionalSong.cpp.s
+
+.PHONY : Stuffs\TraditionalSong.s
+
+# target to generate assembly for a file
+Stuffs\TraditionalSong.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOPProject.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOPProject.dir\Stuffs\TraditionalSong.cpp.s
+.PHONY : Stuffs\TraditionalSong.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -498,9 +660,21 @@ help:
 	@echo ... Stuffs/Artist.obj
 	@echo ... Stuffs/Artist.i
 	@echo ... Stuffs/Artist.s
+	@echo ... Stuffs/AudioRecording.obj
+	@echo ... Stuffs/AudioRecording.i
+	@echo ... Stuffs/AudioRecording.s
 	@echo ... Stuffs/Chord.obj
 	@echo ... Stuffs/Chord.i
 	@echo ... Stuffs/Chord.s
+	@echo ... Stuffs/JsonHelper.obj
+	@echo ... Stuffs/JsonHelper.i
+	@echo ... Stuffs/JsonHelper.s
+	@echo ... Stuffs/Manelist.obj
+	@echo ... Stuffs/Manelist.i
+	@echo ... Stuffs/Manelist.s
+	@echo ... Stuffs/Note.obj
+	@echo ... Stuffs/Note.i
+	@echo ... Stuffs/Note.s
 	@echo ... Stuffs/Podcast.obj
 	@echo ... Stuffs/Podcast.i
 	@echo ... Stuffs/Podcast.s
@@ -510,6 +684,12 @@ help:
 	@echo ... Stuffs/Song.obj
 	@echo ... Stuffs/Song.i
 	@echo ... Stuffs/Song.s
+	@echo ... Stuffs/Sound.obj
+	@echo ... Stuffs/Sound.i
+	@echo ... Stuffs/Sound.s
+	@echo ... Stuffs/TraditionalSong.obj
+	@echo ... Stuffs/TraditionalSong.i
+	@echo ... Stuffs/TraditionalSong.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

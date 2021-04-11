@@ -8,45 +8,21 @@ const int Song::JAZZ_PROGRESSION[] = {2, 5, 1};
 const int Song::CITY_POP_PROGRESSION[] = {4, 5, 3, 6};
 const int Song::BLUES_PROGRESSION[] = {1, 4, 5};
 
-Song::Song() : songNum(-1) {
-    length = 0;
-    likedStatus = false;
-    tier = 'F';
-    rating = 0;
-    views = 0;
-    name = "";
-    mainChordProgression = nullptr;
-    progressionLength = 0;
-    key = nullptr;
-    ratingVariation = nullptr;
-    variationPeriod = 0;
-    similarSongs = nullptr;
-    numOfSimilarSongs = 0;
-    chords = {};
-}
 
-Song::Song(int length, int *mainChordProgression, int progressionLength, bool likedStatus,
-           char tier, char *key, float rating, float *ratingVariation, int variationPeriod,
-           double views, string name, string *similarSongs, int numOfSimilarSongs,
-           int num, vector<Chord> chords) : songNum(num) {
-    this->length = length;
-    this->likedStatus = likedStatus;
-    this->tier = tier;
-    this->rating = rating;
-    this->views = views;
-    this->name = name;
-    this->progressionLength = progressionLength;
-    this->numOfSimilarSongs = numOfSimilarSongs;
-    this->variationPeriod = variationPeriod;
-    this->chords = chords;
-
+Song::Song(string name, vector<Chord> chords, int length, int *mainChordProgression, int progressionLength,
+           bool likedStatus, char tier, char *key, float rating, float *ratingVariation, int variationPeriod,
+           double views, string *similarSongs, int numOfSimilarSongs, int num) : AudioRecording(name, length, views),
+           songNum(num), likedStatus(likedStatus), tier(tier), rating(rating), progressionLength(progressionLength),
+           numOfSimilarSongs(numOfSimilarSongs), variationPeriod(variationPeriod), chords(chords){
     this->mainChordProgression = new int[progressionLength];
     for (int i = 0; i < progressionLength; i++) {
         this->mainChordProgression[i] = mainChordProgression[i];
     }
 
-    this->key = new char[strlen(key) + 1];
-    strcpy(this->key, key);
+    if(key != nullptr){
+        this->key = new char[strlen(key) + 1];
+        strcpy(this->key, key);
+    }
 
     this->ratingVariation = new float[variationPeriod];
     for (int i = 0; i < variationPeriod; i++) {
@@ -60,11 +36,8 @@ Song::Song(int length, int *mainChordProgression, int progressionLength, bool li
 }
 
 Song::Song(int length, string name, int num, char* key, int *mainChordProgression, int progressionLength,
-           double views, vector<Chord> chords) : songNum(-1) {
-    this->length = length;
-    this->name = name;
+           double views, vector<Chord> chords) : AudioRecording(name, length, views), songNum(-1) {
     this->progressionLength = progressionLength;
-    this->views = views;
     this->chords = chords;
     this->key = nullptr;
     this->likedStatus = 0;
@@ -75,8 +48,10 @@ Song::Song(int length, string name, int num, char* key, int *mainChordProgressio
     this->numOfSimilarSongs = 0;
     this->similarSongs = nullptr;
 
-    this->key = new char[strlen(key) + 1];
-    strcpy(this->key, key);
+    if(key != nullptr) {
+        this->key = new char[strlen(key) + 1];
+        strcpy(this->key, key);
+    }
 
     this->mainChordProgression = new int[progressionLength];
     for (int i = 0; i < progressionLength; i++) {
@@ -84,13 +59,10 @@ Song::Song(int length, string name, int num, char* key, int *mainChordProgressio
     }
 }
 
-Song::Song(int num) : songNum(num) {
-    length = 0;
+Song::Song(int num) : AudioRecording("", 0, 0), songNum(num) {
     likedStatus = false;
     tier = 'F';
     rating = 0;
-    views = 0;
-    name = "";
     mainChordProgression = nullptr;
     progressionLength = 0;
     key = nullptr;
@@ -101,13 +73,10 @@ Song::Song(int num) : songNum(num) {
     chords = {};
 }
 
-Song::Song(const Song &song) : songNum(song.songNum) {
-    this->length = song.length;
+Song::Song(const Song &song) :AudioRecording(song), songNum(song.songNum) {
     this->likedStatus = song.likedStatus;
     this->tier = song.tier;
     this->rating = song.rating;
-    this->views = song.views;
-    this->name = song.name;
     this->progressionLength = song.progressionLength;
     this->variationPeriod = song.variationPeriod;
     this->numOfSimilarSongs = song.numOfSimilarSongs;
@@ -219,12 +188,11 @@ Song &Song::operator=(const Song &song) {
         delete[] similarSongs;
     }
 
-    this->length = song.length;
+    AudioRecording::operator=(song);
+
     this->likedStatus = song.likedStatus;
     this->tier = song.tier;
     this->rating = song.rating;
-    this->views = song.views;
-    this->name = song.name;
     this->progressionLength = song.progressionLength;
     this->variationPeriod = song.variationPeriod;
     this->numOfSimilarSongs = song.numOfSimilarSongs;
@@ -255,60 +223,59 @@ Song &Song::operator=(const Song &song) {
     return *this;
 }
 
-ostream &operator<<(ostream &out, const Song &song) {
-    out << "\nSong num: " << song.songNum;
-    out << "\nName: " << song.name;
-    out << "\nViews: " << song.views;
-    out << "\nLength: " << song.length;
+ostream &Song::virtualPrint(ostream &out) const{
+    out << "\nSong num: " << songNum;
+
+    AudioRecording::virtualPrint(out);
 
     out << "\nKey: ";
-    if (song.key != nullptr) {
-        for (int i = 0; i < strlen(song.key); i++) {
-            out << song.key[i];
+    if (key != nullptr) {
+        for (int i = 0; i < strlen(key); i++) {
+            out << key[i];
         }
     } else {
         out << "nullptr";
     }
 
     out << "\nChords: ";
-    for (auto chord:song.chords) {
+    for (auto chord:chords) {
         out << chord.getName() << " ";
     }
 
     out << "\nMain chord progression: ";
-    if (song.mainChordProgression != nullptr) {
-        for (int i = 0; i < song.progressionLength; i++) {
-            out << song.mainChordProgression[i] << ", ";
+    if (mainChordProgression != nullptr) {
+        for (int i = 0; i < progressionLength; i++) {
+            out << mainChordProgression[i] << ", ";
         }
     } else {
         out << "nullptr";
     }
 
     out << "\nLiked: ";
-    if (song.likedStatus) {
+    if (likedStatus) {
         out << "Yes";
     } else {
         out << "No";
     }
 
-    out << "\nTier: " << song.tier;
-    out << "\nRating: " << song.rating;
-    out << "\nVariation period length: " << song.variationPeriod;
+    out << "\nTier: " << tier;
+    out << "\nRating: " << rating;
+    out << "\nVariation period length: " << variationPeriod;
     out << "\nRating variation: ";
 
-    if (song.ratingVariation != nullptr) {
-        for (int i = 0; i < song.variationPeriod; i++) {
-            out << song.ratingVariation[i] << ", ";
+    if (ratingVariation != nullptr) {
+        for (int i = 0; i < variationPeriod; i++) {
+            out << ratingVariation[i] << ", ";
         }
     } else {
         out << "nullptr";
     }
 
-    out << "\nNumber of similar songs: " << song.numOfSimilarSongs;
+    out << "\nNumber of similar songs: " << numOfSimilarSongs;
     out << "\nSimilar songs: ";
-    if (song.similarSongs != nullptr) {
-        for (int i = 0; i < song.numOfSimilarSongs; i++) {
-            out << song.similarSongs[i] << ", ";
+    if (similarSongs != nullptr) {
+        for (int i = 0; i < numOfSimilarSongs; i++) {
+            out << similarSongs[i] << ", ";
         }
     } else {
         out << "nullptr";
@@ -317,69 +284,64 @@ ostream &operator<<(ostream &out, const Song &song) {
     return out;
 }
 
-istream &operator>>(istream &in, Song &song) {
-    cout << "\nName: ";
-    in >> song.name;
-    cout << "\nViews: ";
-    in >> song.views;
-    cout << "\nLength: ";
-    in >> song.length;
+istream &Song::virtualRead(istream &in) {
+    AudioRecording::virtualRead(in);
 
     cout << "\nKey: ";
     char temp[8];
     in >> temp;
-    if (song.key != nullptr) {
-        delete[] song.key;
+    if (key != nullptr) {
+        delete[] key;
     }
-    song.key = new char[strlen(temp) + 1];
-    strcpy(song.key, temp);
+    key = new char[strlen(temp) + 1];
+    strcpy(key, temp);
 
     cout << "\nProgression length: ";
-    in >> song.progressionLength;
+    in >> progressionLength;
     cout << "\nMain chord progression";
-    if (song.mainChordProgression != nullptr) {
-        delete[] song.mainChordProgression;
+    if (mainChordProgression != nullptr) {
+        delete[] mainChordProgression;
     }
-    song.mainChordProgression = new int[song.progressionLength];
-    for (int i = 0; i < song.progressionLength; i++) {
-        in >> song.mainChordProgression[i];
+    mainChordProgression = new int[progressionLength];
+    for (int i = 0; i < progressionLength; i++) {
+        in >> mainChordProgression[i];
     }
 
     cout << "\nChords: ";
-    for (int i = 0; i < song.progressionLength; i++) {
+    for (int i = 0; i < progressionLength; i++) {
         Chord chord;
         cout << "\nChord " << i+1 << endl;
         in >> chord;
-        song.chords.push_back(chord);
+        chords.push_back(chord);
     }
 
     cout << "\nLiked(1/0): ";
-    in >> song.likedStatus;
+    in >> likedStatus;
     cout << "\nTier: ";
-    in >> song.tier;
+    in >> tier;
     cout << "\nRating: ";
-    in >> song.rating;
+    in >> rating;
 
     cout << "\nVariation period(in months): ";
-    in >> song.variationPeriod;
+    in >> variationPeriod;
     cout << "\nRating variation: ";
-    if (song.ratingVariation != nullptr) {
-        delete[] song.ratingVariation;
+    if (ratingVariation != nullptr) {
+        delete[] ratingVariation;
     }
-    song.ratingVariation = new float[song.variationPeriod];
-    for (int i = 0; i < song.variationPeriod; i++) {
-        in >> song.ratingVariation[i];
+    ratingVariation = new float[variationPeriod];
+    for (int i = 0; i < variationPeriod; i++) {
+        in >> ratingVariation[i];
     }
 
     cout << "\nNumber of similar songs: ";
-    in >> song.numOfSimilarSongs;
+    in >> numOfSimilarSongs;
     cout << "\nSimilar songs: ";
-    if (song.similarSongs != nullptr) {
-        delete[] song.similarSongs;
+    if (similarSongs != nullptr) {
+        delete[] similarSongs;
     }
-    song.similarSongs = new string[song.numOfSimilarSongs];
-    for (int i = 0; i < song.numOfSimilarSongs; i++) {
-        in >> song.similarSongs[i];
+    similarSongs = new string[numOfSimilarSongs];
+    for (int i = 0; i < numOfSimilarSongs; i++) {
+        in >> similarSongs[i];
     }
 
     return in;
@@ -521,6 +483,13 @@ Song Song::generateSong(string key, string tonality, string genre, int id) {
     }
 
     return song;
+}
+
+void Song::play() {
+    cout << endl;
+    for(Chord chord : chords) {
+        cout << chord << " ";
+    }
 }
 
 /*

@@ -393,10 +393,34 @@
 		<Unit filename="K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Artist.h">
 			<Option target="OOPProject"/>
 		</Unit>
+		<Unit filename="K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/AudioRecording.cpp">
+			<Option target="OOPProject"/>
+		</Unit>
+		<Unit filename="K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/AudioRecording.h">
+			<Option target="OOPProject"/>
+		</Unit>
 		<Unit filename="K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Chord.cpp">
 			<Option target="OOPProject"/>
 		</Unit>
 		<Unit filename="K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Chord.h">
+			<Option target="OOPProject"/>
+		</Unit>
+		<Unit filename="K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/JsonHelper.cpp">
+			<Option target="OOPProject"/>
+		</Unit>
+		<Unit filename="K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/JsonHelper.h">
+			<Option target="OOPProject"/>
+		</Unit>
+		<Unit filename="K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Manelist.cpp">
+			<Option target="OOPProject"/>
+		</Unit>
+		<Unit filename="K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Manelist.h">
+			<Option target="OOPProject"/>
+		</Unit>
+		<Unit filename="K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Note.cpp">
+			<Option target="OOPProject"/>
+		</Unit>
+		<Unit filename="K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Note.h">
 			<Option target="OOPProject"/>
 		</Unit>
 		<Unit filename="K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Podcast.cpp">
@@ -415,6 +439,18 @@
 			<Option target="OOPProject"/>
 		</Unit>
 		<Unit filename="K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Song.h">
+			<Option target="OOPProject"/>
+		</Unit>
+		<Unit filename="K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Sound.cpp">
+			<Option target="OOPProject"/>
+		</Unit>
+		<Unit filename="K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Sound.h">
+			<Option target="OOPProject"/>
+		</Unit>
+		<Unit filename="K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/TraditionalSong.cpp">
+			<Option target="OOPProject"/>
+		</Unit>
+		<Unit filename="K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/TraditionalSong.h">
 			<Option target="OOPProject"/>
 		</Unit>
 		<Unit filename="K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/main.cpp">

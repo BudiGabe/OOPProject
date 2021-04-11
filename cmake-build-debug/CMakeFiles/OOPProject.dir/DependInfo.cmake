@@ -8,10 +8,16 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Google_tests/RandomGeneratorsTest.cpp" "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/cmake-build-debug/CMakeFiles/OOPProject.dir/Google_tests/RandomGeneratorsTest.cpp.obj"
   "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Google_tests/SongTest.cpp" "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/cmake-build-debug/CMakeFiles/OOPProject.dir/Google_tests/SongTest.cpp.obj"
   "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Artist.cpp" "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/cmake-build-debug/CMakeFiles/OOPProject.dir/Stuffs/Artist.cpp.obj"
+  "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/AudioRecording.cpp" "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/cmake-build-debug/CMakeFiles/OOPProject.dir/Stuffs/AudioRecording.cpp.obj"
   "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Chord.cpp" "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/cmake-build-debug/CMakeFiles/OOPProject.dir/Stuffs/Chord.cpp.obj"
+  "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/JsonHelper.cpp" "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/cmake-build-debug/CMakeFiles/OOPProject.dir/Stuffs/JsonHelper.cpp.obj"
+  "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Manelist.cpp" "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/cmake-build-debug/CMakeFiles/OOPProject.dir/Stuffs/Manelist.cpp.obj"
+  "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Note.cpp" "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/cmake-build-debug/CMakeFiles/OOPProject.dir/Stuffs/Note.cpp.obj"
   "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Podcast.cpp" "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/cmake-build-debug/CMakeFiles/OOPProject.dir/Stuffs/Podcast.cpp.obj"
   "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/RandomHelper.cpp" "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/cmake-build-debug/CMakeFiles/OOPProject.dir/Stuffs/RandomHelper.cpp.obj"
   "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Song.cpp" "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/cmake-build-debug/CMakeFiles/OOPProject.dir/Stuffs/Song.cpp.obj"
+  "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Sound.cpp" "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/cmake-build-debug/CMakeFiles/OOPProject.dir/Stuffs/Sound.cpp.obj"
+  "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/TraditionalSong.cpp" "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/cmake-build-debug/CMakeFiles/OOPProject.dir/Stuffs/TraditionalSong.cpp.obj"
   "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/main.cpp" "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/cmake-build-debug/CMakeFiles/OOPProject.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")

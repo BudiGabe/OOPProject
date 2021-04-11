@@ -6,11 +6,9 @@
 
 using namespace std;
 
-class Podcast
+class Podcast: public AudioRecording
 {
 private:
-	// In minutes
-	int length;
 	string host;
 	string guest;
 	vector<string> topics;
@@ -21,12 +19,10 @@ public:
     const static int TOPIC_LENGTH = 15;
 	Podcast();
 	Podcast(int length, string host, string guest, vector<string> topics);
-	Podcast(int length, string host, string guest);
+    Podcast(string name, int length, double views, string host, string guest, vector<string> topics);
+    Podcast(int length, string host, string guest);
 	Podcast(const Podcast& podcast);
 	~Podcast();
-
-	int getLength() const { return length; }
-	void setLength(int newLength) { length = newLength; }
 
 	string getHost() const { return host; }
 	void setHost(string newHost) { host = newHost; }
@@ -38,8 +34,8 @@ public:
 	void setTopics(vector<string>& newTopics) { topics = newTopics; }
 
 	Podcast& operator=(const Podcast& podcast);
-	friend ostream& operator <<(ostream& out, const Podcast& podcast);
-	friend istream& operator >>(istream& in, Podcast& podcast);
+	ostream& virtualPrint(ostream& out)const;
+	istream& virtualRead(istream& in);
 	string& operator[](int index);
 	Podcast& operator ++();
 	Podcast operator ++(int);
@@ -50,5 +46,6 @@ public:
 	friend bool operator ==(const Podcast& podcast1, const Podcast& podcast2);
 
 	static Podcast recordPodcast(string host, string guest, int length);
+	void play();
 };
 

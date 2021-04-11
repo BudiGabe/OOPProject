@@ -49,3 +49,11 @@ std::string RandomHelper::getRandomTopic() {
     std::uniform_real_distribution<double> dist(0, Podcast::ALL_TOPICS.size());
     return Podcast::ALL_TOPICS[dist(mt)];
 }
+
+int RandomHelper::getRandomNumInRange(int l, int r) {
+    std::uniform_real_distribution<double> dist(l, r+1);
+    return dist(mt);
+}
+
+
+

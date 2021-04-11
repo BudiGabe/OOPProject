@@ -7,29 +7,32 @@ const vector<string> Podcast::GUESTS{ "Bill Burr", "Dan Avidan", "Pewdiepie", "C
                                      "Ramona Cordos", "Cazaciuc Valentin", "Matei Anechitei",
                                      "Jimmy Carr", "Teo", "Vio", "Costel", "Micutzu"};
 
-Podcast::Podcast() {
-	length = 0;
+Podcast::Podcast(): AudioRecording("", 0, 0) {
 	host = "";
 	guest = "";
 	topics = {};
 }
 
-Podcast::Podcast(int length, string host, string guest, vector<string> topics) {
-	this->length = length;
+Podcast::Podcast(int length, string host, string guest, vector<string> topics): AudioRecording("", length) {
 	this->host = host;
 	this->guest = guest;
 	this->topics = topics;
 }
 
-Podcast::Podcast(int length, string host, string guest) {
-	this->length = length;
+Podcast::Podcast(string name, int length, double views, string host, string guest, vector<string> topics):
+    AudioRecording(name, length, views) {
+    this->host = host;
+    this->guest = guest;
+    this->topics = topics;
+}
+
+Podcast::Podcast(int length, string host, string guest): AudioRecording("", length) {
 	this->host = host;
 	this->guest = guest;
 	this->topics = {};
 }
 
-Podcast::Podcast(const Podcast& podcast) {
-	this->length = podcast.length;
+Podcast::Podcast(const Podcast& podcast): AudioRecording(podcast) {
 	this->host = podcast.host;
 	this->guest = podcast.guest;
 	this->topics = podcast.topics;
@@ -42,7 +45,8 @@ Podcast& Podcast::operator =(const Podcast& podcast) {
         return *this;
     }
 
-	this->length = podcast.length;
+    AudioRecording::operator=(podcast);
+
 	this->host = podcast.host;
 	this->guest = podcast.guest;
 	this->topics = podcast.topics;
@@ -50,28 +54,27 @@ Podcast& Podcast::operator =(const Podcast& podcast) {
 	return *this;
 }
 
-ostream& operator <<(ostream& out, const Podcast& podcast) {
-	out << "\nLength: " << podcast.length;
-	out << "\nHost: " << podcast.host;
-	out << "\nGuest: " << podcast.guest;
+ostream& Podcast::virtualPrint(ostream& out) const{
+    AudioRecording::virtualPrint(out);
+	out << "\nHost: " << host;
+	out << "\nGuest: " << guest;
 	out << "\nTopics: ";
 
-	for (auto topic : podcast.topics) {
+	for (auto topic : topics) {
 		out << topic << ", ";
 	}
 
 	return out;
 }
 
-istream& operator >>(istream& in, Podcast& podcast) {
-	cout << "\nLength: ";
-	in >> podcast.length;
+istream& Podcast::virtualRead(istream& in) {
+    AudioRecording::virtualRead(in);
 
 	cout << "\nHost: ";
-	in >> podcast.host;
+	in >> host;
 
 	cout << "\nGuest: ";
-	in >> podcast.guest;
+	in >> guest;
 
 	cout << "\nHow many topics have been discussed: ";
 	int topicNum;
@@ -81,7 +84,7 @@ istream& operator >>(istream& in, Podcast& podcast) {
 	cout << "\nTopics: ";
 	for (int i = 0; i < topicNum; i++) {
 		in >> topic;
-		podcast.topics.push_back(topic);
+		topics.push_back(topic);
 	}
 
 	return in;
@@ -148,17 +151,6 @@ bool operator <(const Podcast& podcast1, const Podcast& podcast2) {
 }
 
 bool operator ==(const Podcast& podcast1, const Podcast& podcast2) {
-    cout << (podcast1.host == podcast2.host);
-    cout << (podcast1.guest == podcast2.guest);
-    cout << (podcast1.topics == podcast2.topics);
-    cout << (podcast1.length == podcast2.length);
-    if(podcast1.topics != podcast2.topics) {
-        cout << endl << "***********************************************************************************" << endl;
-        for(int i = 0; i < podcast1.topics.size(); i++) {
-            if(podcast1.topics[i] != podcast2.topics[i])
-                cout << ":" << podcast1.topics[i] << ":" << podcast2.topics[i] << ":";
-        }
-    }
 	return podcast1.host == podcast2.host
 	    && podcast1.guest == podcast2.guest
 	    && podcast1.topics == podcast2.topics
@@ -183,5 +175,12 @@ Podcast Podcast::recordPodcast(string host, string guest, int length) {
 	}
 
 	return newPodcast;
+}
+
+void Podcast::play() {
+    cout << endl;
+    for(string topic:topics) {
+        cout << topic << " ";
+    }
 }
 

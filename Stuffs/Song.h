@@ -3,19 +3,17 @@
 #include <string.h>
 #include <iostream>
 #include "Chord.h"
+#include "AudioRecording.h"
 #include <vector>
 #include <map>
 #include <algorithm>
 
 using namespace std;
 
-class Song
+class Song: public AudioRecording
 {
-private:
+protected:
 	const int songNum;
-	string name;
-	double views;
-	int length;
 	char* key = nullptr;
 	int progressionLength = 0;
 	int* mainChordProgression = nullptr;
@@ -26,12 +24,13 @@ private:
 	float* ratingVariation = nullptr;
 	int numOfSimilarSongs = 0;
 	string* similarSongs = nullptr;
-	vector<Chord> chords;
+    vector<Chord> chords;
 
     template <typename T>
     static bool dynamicArraysAreEqual(T &x, T &y);
     static void createProgression(int &length, int *&progression, const int premadeProgression[],
                            map<int, Chord> keyMap, vector<Chord> &chords);
+
     static void createProgression(Song &song, const int premadeProgression[], map<int, Chord> keyMap);
 
 public:
@@ -43,19 +42,15 @@ public:
 	const static int CITY_POP_PROGRESSION[];
 	const static int BLUES_PROGRESSION[];
 
-	Song();
 	Song(int length, string name, int num, char* key, int* mainChordProgression, int progressionLength,
 		double views, vector<Chord> chords);
-	Song(int length, int* mainChordProgression, int progressionLength, bool likedStatus,
-		char tier, char* key, float rating, float* ratingVariation, int variationPeriod,
-		double views, string name, string* similarSongs, int numOfSimilarSongs,
-		int num, vector<Chord> chords);
+        Song(string name="", vector<Chord> chords={}, int length=0, int* mainChordProgression=nullptr,
+            int progressionLength=0, bool likedStatus=false, char tier='F', char* key=nullptr, float rating=0,
+            float* ratingVariation=nullptr, int variationPeriod=0, double views=0, string* similarSongs=nullptr,
+            int numOfSimilarSongs=0, int num=-1);
 	Song(int num);
 	Song(const Song& song);
 	~Song();
-
-	int getLength() { return length; }
-	void setLength(int value) { length = value; }
 
 	bool getLikedStatus() { return likedStatus; }
 	void setLikedStatus(bool status) { likedStatus = status; }
@@ -66,13 +61,7 @@ public:
 	float getRating() { return rating; }
 	void setRating(float rating) { this->rating = rating; }
 
-	double getViews() { return views; }
-	void setViews(double value) { views = value; }
-
 	int getSongNum() { return songNum; }
-
-	string getName() { return name; }
-	void setName(string newName) { name = newName; }
 
 	int getProgressionLength() { return progressionLength; }
 	void setProgressionLength(int length) { progressionLength = length; }
@@ -99,8 +88,8 @@ public:
 	void setChords(const vector<Chord>& newChords) { chords = newChords; }
 
 	Song& operator =(const Song& song);
-	friend ostream& operator <<(ostream& out, const Song& song);
-	friend istream& operator >>(istream& in, Song& song);
+    virtual ostream& virtualPrint(ostream& out)const;
+    virtual istream& virtualRead (istream& in);
 	int& operator[](int index);
 	Song& operator++();
 	Song operator++(int);
@@ -111,5 +100,6 @@ public:
 	friend bool operator==(const Song& song1, const Song& song2);
 
 	static Song generateSong(string key, string tonality, string genre, int id);
+	void play();
 };
 

@@ -47,6 +47,7 @@ CMakeFiles/OOPProject.dir/Google_tests/RandomGeneratorsTest.cpp.obj
  ../Google_tests/lib/googletest/include/gtest/internal/gtest-type-util.h
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Google_tests/RandomGeneratorsTest.cpp
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Artist.h
+ K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/AudioRecording.h
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Chord.h
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Podcast.h
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/RandomHelper.h
@@ -73,58 +74,66 @@ CMakeFiles/OOPProject.dir/Google_tests/SongTest.cpp.obj
  ../Google_tests/lib/googletest/include/gtest/internal/gtest-string.h
  ../Google_tests/lib/googletest/include/gtest/internal/gtest-type-util.h
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Google_tests/SongTest.cpp
+ K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/AudioRecording.h
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Chord.h
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Song.h
 CMakeFiles/OOPProject.dir/Stuffs/Artist.cpp.obj
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Artist.cpp
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Artist.h
+ K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/AudioRecording.h
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Chord.h
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Podcast.h
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/RandomHelper.h
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Song.h
+CMakeFiles/OOPProject.dir/Stuffs/AudioRecording.cpp.obj
+ K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/AudioRecording.cpp
+ K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/AudioRecording.h
 CMakeFiles/OOPProject.dir/Stuffs/Chord.cpp.obj
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Chord.cpp
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Chord.h
+CMakeFiles/OOPProject.dir/Stuffs/JsonHelper.cpp.obj
+ K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/JsonHelper.cpp
+ K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/JsonHelper.h
+CMakeFiles/OOPProject.dir/Stuffs/Manelist.cpp.obj
+ K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Artist.h
+ K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/AudioRecording.h
+ K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Chord.h
+ K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/JsonHelper.h
+ K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Manelist.cpp
+ K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Manelist.h
+ K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Podcast.h
+ K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/RandomHelper.h
+ K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Song.h
+CMakeFiles/OOPProject.dir/Stuffs/Note.cpp.obj
+ K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Note.cpp
+ K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Note.h
+ K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Sound.h
 CMakeFiles/OOPProject.dir/Stuffs/Podcast.cpp.obj
+ K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/AudioRecording.h
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Chord.h
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Podcast.cpp
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Podcast.h
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/RandomHelper.h
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Song.h
 CMakeFiles/OOPProject.dir/Stuffs/RandomHelper.cpp.obj
+ K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/AudioRecording.h
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Chord.h
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Podcast.h
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/RandomHelper.cpp
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/RandomHelper.h
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Song.h
 CMakeFiles/OOPProject.dir/Stuffs/Song.cpp.obj
+ K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/AudioRecording.h
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Chord.h
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Song.cpp
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Song.h
-CMakeFiles/OOPProject.dir/main.cpp.obj
- ../Google_tests/lib/googletest/include/gtest/gtest-death-test.h
- ../Google_tests/lib/googletest/include/gtest/gtest-matchers.h
- ../Google_tests/lib/googletest/include/gtest/gtest-message.h
- ../Google_tests/lib/googletest/include/gtest/gtest-param-test.h
- ../Google_tests/lib/googletest/include/gtest/gtest-printers.h
- ../Google_tests/lib/googletest/include/gtest/gtest-test-part.h
- ../Google_tests/lib/googletest/include/gtest/gtest-typed-test.h
- ../Google_tests/lib/googletest/include/gtest/gtest.h
- ../Google_tests/lib/googletest/include/gtest/gtest_pred_impl.h
- ../Google_tests/lib/googletest/include/gtest/gtest_prod.h
- ../Google_tests/lib/googletest/include/gtest/internal/custom/gtest-port.h
- ../Google_tests/lib/googletest/include/gtest/internal/custom/gtest-printers.h
- ../Google_tests/lib/googletest/include/gtest/internal/gtest-death-test-internal.h
- ../Google_tests/lib/googletest/include/gtest/internal/gtest-filepath.h
- ../Google_tests/lib/googletest/include/gtest/internal/gtest-internal.h
- ../Google_tests/lib/googletest/include/gtest/internal/gtest-param-util.h
- ../Google_tests/lib/googletest/include/gtest/internal/gtest-port-arch.h
- ../Google_tests/lib/googletest/include/gtest/internal/gtest-port.h
- ../Google_tests/lib/googletest/include/gtest/internal/gtest-string.h
- ../Google_tests/lib/googletest/include/gtest/internal/gtest-type-util.h
- K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Artist.h
+CMakeFiles/OOPProject.dir/Stuffs/Sound.cpp.obj
+ K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Sound.cpp
+CMakeFiles/OOPProject.dir/Stuffs/TraditionalSong.cpp.obj
+ K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/AudioRecording.h
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Chord.h
- K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Podcast.h
- K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/RandomHelper.h
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Song.h
+ K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/TraditionalSong.cpp
+ K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/TraditionalSong.h
+CMakeFiles/OOPProject.dir/main.cpp.obj
  K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/main.cpp
