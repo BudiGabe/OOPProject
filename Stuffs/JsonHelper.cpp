@@ -1,7 +1,3 @@
-//
-// Created by Budi on 09-Apr-21.
-//
-
 #include "JsonHelper.h"
 
 /*

@@ -1,0 +1,15 @@
+
+Song num: 1
+Name: Generic Song 1
+Views: 0
+Length: 0
+Key: Am
+Chords: Bdim Em Am 
+Main chord progression: 2, 5, 1, 
+Liked: No
+Tier: F
+Rating: 0
+Variation period length: 0
+Rating variation: 
+Number of similar songs: 0
+Similar songs: 

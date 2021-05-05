@@ -6,16 +6,16 @@
  */
 class Manelist: public Artist {
 private:
-    int valoare;
+    long long valoare;
     static const string YOUTUBE;
 public:
-    Manelist(const string &name, const vector<Song> &songs, const vector<Podcast> &podcasts, int followers,
-             int valoare);
+    Manelist(const string &name="", const vector<Song> &songs={}, const vector<Podcast> &podcasts={}, int followers=0,
+             long long valoare=99999999);
     Manelist(const Manelist& manelist);
     ~Manelist();
 
-    int getValoare() const;
-    void setValoare(int valoare);
+    long long getValoare() const;
+    void setValoare(long long valoare);
 
     Manelist& operator =(const Manelist& manelist);
     ostream& virtualPrint(ostream& out) const;

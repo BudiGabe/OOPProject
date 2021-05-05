@@ -417,6 +417,12 @@
 		<Unit filename="K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Manelist.h">
 			<Option target="OOPProject"/>
 		</Unit>
+		<Unit filename="K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Menu.cpp">
+			<Option target="OOPProject"/>
+		</Unit>
+		<Unit filename="K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Menu.h">
+			<Option target="OOPProject"/>
+		</Unit>
 		<Unit filename="K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Note.cpp">
 			<Option target="OOPProject"/>
 		</Unit>

@@ -442,6 +442,33 @@ Stuffs\Manelist.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOPProject.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOPProject.dir\Stuffs\Manelist.cpp.s
 .PHONY : Stuffs\Manelist.cpp.s
 
+Stuffs\Menu.obj: Stuffs\Menu.cpp.obj
+
+.PHONY : Stuffs\Menu.obj
+
+# target to build an object file
+Stuffs\Menu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOPProject.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOPProject.dir\Stuffs\Menu.cpp.obj
+.PHONY : Stuffs\Menu.cpp.obj
+
+Stuffs\Menu.i: Stuffs\Menu.cpp.i
+
+.PHONY : Stuffs\Menu.i
+
+# target to preprocess a source file
+Stuffs\Menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOPProject.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOPProject.dir\Stuffs\Menu.cpp.i
+.PHONY : Stuffs\Menu.cpp.i
+
+Stuffs\Menu.s: Stuffs\Menu.cpp.s
+
+.PHONY : Stuffs\Menu.s
+
+# target to generate assembly for a file
+Stuffs\Menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOPProject.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOPProject.dir\Stuffs\Menu.cpp.s
+.PHONY : Stuffs\Menu.cpp.s
+
 Stuffs\Note.obj: Stuffs\Note.cpp.obj
 
 .PHONY : Stuffs\Note.obj
@@ -672,6 +699,9 @@ help:
 	@echo ... Stuffs/Manelist.obj
 	@echo ... Stuffs/Manelist.i
 	@echo ... Stuffs/Manelist.s
+	@echo ... Stuffs/Menu.obj
+	@echo ... Stuffs/Menu.i
+	@echo ... Stuffs/Menu.s
 	@echo ... Stuffs/Note.obj
 	@echo ... Stuffs/Note.i
 	@echo ... Stuffs/Note.s

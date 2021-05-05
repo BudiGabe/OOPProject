@@ -158,17 +158,17 @@ Google_tests\lib\googletest\clean: Google_tests\lib\googletest\CMakeFiles\gtest_
 
 # All Build rule for target.
 CMakeFiles\OOPProject.dir\all: Google_tests\lib\googletest\CMakeFiles\gtest.dir\all
-CMakeFiles\OOPProject.dir\all: Google_tests\lib\googletest\CMakeFiles\gtest_main.dir\all
 CMakeFiles\OOPProject.dir\all: Google_tests\lib\googlemock\CMakeFiles\gmock_main.dir\all
 CMakeFiles\OOPProject.dir\all: Google_tests\lib\googlemock\CMakeFiles\gmock.dir\all
+CMakeFiles\OOPProject.dir\all: Google_tests\lib\googletest\CMakeFiles\gtest_main.dir\all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOPProject.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOPProject.dir\depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OOPProject.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\OOPProject.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=K:\Important\Facultate\Sem2\POO\Proiect\OOPProject\cmake-build-debug\CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 "Built target OOPProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=K:\Important\Facultate\Sem2\POO\Proiect\OOPProject\cmake-build-debug\CMakeFiles --progress-num=5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21 "Built target OOPProject"
 .PHONY : CMakeFiles\OOPProject.dir\all
 
 # Build rule for subdir invocation for target.
 CMakeFiles\OOPProject.dir\rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start K:\Important\Facultate\Sem2\POO\Proiect\OOPProject\cmake-build-debug\CMakeFiles 27
+	$(CMAKE_COMMAND) -E cmake_progress_start K:\Important\Facultate\Sem2\POO\Proiect\OOPProject\cmake-build-debug\CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\OOPProject.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start K:\Important\Facultate\Sem2\POO\Proiect\OOPProject\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles\OOPProject.dir\rule
@@ -218,7 +218,7 @@ Google_tests\CMakeFiles\Google_Tests_run.dir\clean:
 Google_tests\lib\googlemock\CMakeFiles\gmock_main.dir\all:
 	$(MAKE) $(MAKESILENT) -f Google_tests\lib\googlemock\CMakeFiles\gmock_main.dir\build.make /nologo -$(MAKEFLAGS) Google_tests\lib\googlemock\CMakeFiles\gmock_main.dir\depend
 	$(MAKE) $(MAKESILENT) -f Google_tests\lib\googlemock\CMakeFiles\gmock_main.dir\build.make /nologo -$(MAKEFLAGS) Google_tests\lib\googlemock\CMakeFiles\gmock_main.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=K:\Important\Facultate\Sem2\POO\Proiect\OOPProject\cmake-build-debug\CMakeFiles --progress-num=24,25,26,27 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=K:\Important\Facultate\Sem2\POO\Proiect\OOPProject\cmake-build-debug\CMakeFiles --progress-num=25,26,27,28 "Built target gmock_main"
 .PHONY : Google_tests\lib\googlemock\CMakeFiles\gmock_main.dir\all
 
 # Build rule for subdir invocation for target.
@@ -245,7 +245,7 @@ Google_tests\lib\googlemock\CMakeFiles\gmock_main.dir\clean:
 Google_tests\lib\googlemock\CMakeFiles\gmock.dir\all:
 	$(MAKE) $(MAKESILENT) -f Google_tests\lib\googlemock\CMakeFiles\gmock.dir\build.make /nologo -$(MAKEFLAGS) Google_tests\lib\googlemock\CMakeFiles\gmock.dir\depend
 	$(MAKE) $(MAKESILENT) -f Google_tests\lib\googlemock\CMakeFiles\gmock.dir\build.make /nologo -$(MAKEFLAGS) Google_tests\lib\googlemock\CMakeFiles\gmock.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=K:\Important\Facultate\Sem2\POO\Proiect\OOPProject\cmake-build-debug\CMakeFiles --progress-num=21,22,23 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=K:\Important\Facultate\Sem2\POO\Proiect\OOPProject\cmake-build-debug\CMakeFiles --progress-num=22,23,24 "Built target gmock"
 .PHONY : Google_tests\lib\googlemock\CMakeFiles\gmock.dir\all
 
 # Build rule for subdir invocation for target.
@@ -272,7 +272,7 @@ Google_tests\lib\googlemock\CMakeFiles\gmock.dir\clean:
 Google_tests\lib\googletest\CMakeFiles\gtest.dir\all:
 	$(MAKE) $(MAKESILENT) -f Google_tests\lib\googletest\CMakeFiles\gtest.dir\build.make /nologo -$(MAKEFLAGS) Google_tests\lib\googletest\CMakeFiles\gtest.dir\depend
 	$(MAKE) $(MAKESILENT) -f Google_tests\lib\googletest\CMakeFiles\gtest.dir\build.make /nologo -$(MAKEFLAGS) Google_tests\lib\googletest\CMakeFiles\gtest.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=K:\Important\Facultate\Sem2\POO\Proiect\OOPProject\cmake-build-debug\CMakeFiles --progress-num=28,29 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=K:\Important\Facultate\Sem2\POO\Proiect\OOPProject\cmake-build-debug\CMakeFiles --progress-num=29,30 "Built target gtest"
 .PHONY : Google_tests\lib\googletest\CMakeFiles\gtest.dir\all
 
 # Build rule for subdir invocation for target.
@@ -299,7 +299,7 @@ Google_tests\lib\googletest\CMakeFiles\gtest.dir\clean:
 Google_tests\lib\googletest\CMakeFiles\gtest_main.dir\all: Google_tests\lib\googletest\CMakeFiles\gtest.dir\all
 	$(MAKE) $(MAKESILENT) -f Google_tests\lib\googletest\CMakeFiles\gtest_main.dir\build.make /nologo -$(MAKEFLAGS) Google_tests\lib\googletest\CMakeFiles\gtest_main.dir\depend
 	$(MAKE) $(MAKESILENT) -f Google_tests\lib\googletest\CMakeFiles\gtest_main.dir\build.make /nologo -$(MAKEFLAGS) Google_tests\lib\googletest\CMakeFiles\gtest_main.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=K:\Important\Facultate\Sem2\POO\Proiect\OOPProject\cmake-build-debug\CMakeFiles --progress-num=30,31 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=K:\Important\Facultate\Sem2\POO\Proiect\OOPProject\cmake-build-debug\CMakeFiles --progress-num=31,32 "Built target gtest_main"
 .PHONY : Google_tests\lib\googletest\CMakeFiles\gtest_main.dir\all
 
 # Build rule for subdir invocation for target.

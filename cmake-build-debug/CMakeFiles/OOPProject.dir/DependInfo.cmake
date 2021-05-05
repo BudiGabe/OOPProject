@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Chord.cpp" "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/cmake-build-debug/CMakeFiles/OOPProject.dir/Stuffs/Chord.cpp.obj"
   "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/JsonHelper.cpp" "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/cmake-build-debug/CMakeFiles/OOPProject.dir/Stuffs/JsonHelper.cpp.obj"
   "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Manelist.cpp" "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/cmake-build-debug/CMakeFiles/OOPProject.dir/Stuffs/Manelist.cpp.obj"
+  "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Menu.cpp" "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/cmake-build-debug/CMakeFiles/OOPProject.dir/Stuffs/Menu.cpp.obj"
   "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Note.cpp" "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/cmake-build-debug/CMakeFiles/OOPProject.dir/Stuffs/Note.cpp.obj"
   "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/Podcast.cpp" "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/cmake-build-debug/CMakeFiles/OOPProject.dir/Stuffs/Podcast.cpp.obj"
   "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/Stuffs/RandomHelper.cpp" "K:/Important/Facultate/Sem2/POO/Proiect/OOPProject/cmake-build-debug/CMakeFiles/OOPProject.dir/Stuffs/RandomHelper.cpp.obj"

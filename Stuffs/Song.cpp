@@ -440,7 +440,6 @@ void Song::createProgression(Song &song, const int premadeProgression[], map<int
     int *progression = new int[song.getProgressionLength()];
 
     for (int i = 0; i < song.getProgressionLength(); i++) {
-
         progression[i] = premadeProgression[i];
         Chord chord = keyMap[premadeProgression[i]];
         song.getChords().push_back(chord);

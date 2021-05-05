@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/OOPProject.dir/Stuffs/Chord.cpp.obj"
   "CMakeFiles/OOPProject.dir/Stuffs/JsonHelper.cpp.obj"
   "CMakeFiles/OOPProject.dir/Stuffs/Manelist.cpp.obj"
+  "CMakeFiles/OOPProject.dir/Stuffs/Menu.cpp.obj"
   "CMakeFiles/OOPProject.dir/Stuffs/Note.cpp.obj"
   "CMakeFiles/OOPProject.dir/Stuffs/Podcast.cpp.obj"
   "CMakeFiles/OOPProject.dir/Stuffs/RandomHelper.cpp.obj"

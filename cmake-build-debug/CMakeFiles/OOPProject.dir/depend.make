@@ -104,6 +104,17 @@ CMakeFiles\OOPProject.dir\Stuffs\Manelist.cpp.obj: ..\Stuffs\Podcast.h
 CMakeFiles\OOPProject.dir\Stuffs\Manelist.cpp.obj: ..\Stuffs\RandomHelper.h
 CMakeFiles\OOPProject.dir\Stuffs\Manelist.cpp.obj: ..\Stuffs\Song.h
 
+CMakeFiles\OOPProject.dir\Stuffs\Menu.cpp.obj: ..\Stuffs\Artist.h
+CMakeFiles\OOPProject.dir\Stuffs\Menu.cpp.obj: ..\Stuffs\AudioRecording.h
+CMakeFiles\OOPProject.dir\Stuffs\Menu.cpp.obj: ..\Stuffs\Chord.h
+CMakeFiles\OOPProject.dir\Stuffs\Menu.cpp.obj: ..\Stuffs\Manelist.h
+CMakeFiles\OOPProject.dir\Stuffs\Menu.cpp.obj: ..\Stuffs\Menu.cpp
+CMakeFiles\OOPProject.dir\Stuffs\Menu.cpp.obj: ..\Stuffs\Menu.h
+CMakeFiles\OOPProject.dir\Stuffs\Menu.cpp.obj: ..\Stuffs\Podcast.h
+CMakeFiles\OOPProject.dir\Stuffs\Menu.cpp.obj: ..\Stuffs\RandomHelper.h
+CMakeFiles\OOPProject.dir\Stuffs\Menu.cpp.obj: ..\Stuffs\Song.h
+CMakeFiles\OOPProject.dir\Stuffs\Menu.cpp.obj: ..\Stuffs\TraditionalSong.h
+
 CMakeFiles\OOPProject.dir\Stuffs\Note.cpp.obj: ..\Stuffs\Note.cpp
 CMakeFiles\OOPProject.dir\Stuffs\Note.cpp.obj: ..\Stuffs\Note.h
 CMakeFiles\OOPProject.dir\Stuffs\Note.cpp.obj: ..\Stuffs\Sound.h
@@ -159,6 +170,7 @@ CMakeFiles\OOPProject.dir\main.cpp.obj: ..\Stuffs\Artist.h
 CMakeFiles\OOPProject.dir\main.cpp.obj: ..\Stuffs\AudioRecording.h
 CMakeFiles\OOPProject.dir\main.cpp.obj: ..\Stuffs\Chord.h
 CMakeFiles\OOPProject.dir\main.cpp.obj: ..\Stuffs\Manelist.h
+CMakeFiles\OOPProject.dir\main.cpp.obj: ..\Stuffs\Menu.h
 CMakeFiles\OOPProject.dir\main.cpp.obj: ..\Stuffs\Note.h
 CMakeFiles\OOPProject.dir\main.cpp.obj: ..\Stuffs\Podcast.h
 CMakeFiles\OOPProject.dir\main.cpp.obj: ..\Stuffs\RandomHelper.h

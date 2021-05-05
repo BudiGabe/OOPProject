@@ -346,6 +346,25 @@ CMakeFiles\OOPProject.dir\Stuffs\Note.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\OOPProject.dir\Stuffs\Note.cpp.s /c K:\Important\Facultate\Sem2\POO\Proiect\OOPProject\Stuffs\Note.cpp
 <<
 
+CMakeFiles\OOPProject.dir\Stuffs\Menu.cpp.obj: CMakeFiles\OOPProject.dir\flags.make
+CMakeFiles\OOPProject.dir\Stuffs\Menu.cpp.obj: ..\Stuffs\Menu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=K:\Important\Facultate\Sem2\POO\Proiect\OOPProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/OOPProject.dir/Stuffs/Menu.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2019\BUILDT~1\VC\Tools\MSVC\1425~1.286\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\OOPProject.dir\Stuffs\Menu.cpp.obj /FdCMakeFiles\OOPProject.dir\ /FS -c K:\Important\Facultate\Sem2\POO\Proiect\OOPProject\Stuffs\Menu.cpp
+<<
+
+CMakeFiles\OOPProject.dir\Stuffs\Menu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/OOPProject.dir/Stuffs/Menu.cpp.i"
+	C:\PROGRA~2\MICROS~2\2019\BUILDT~1\VC\Tools\MSVC\1425~1.286\bin\Hostx86\x86\cl.exe > CMakeFiles\OOPProject.dir\Stuffs\Menu.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E K:\Important\Facultate\Sem2\POO\Proiect\OOPProject\Stuffs\Menu.cpp
+<<
+
+CMakeFiles\OOPProject.dir\Stuffs\Menu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/OOPProject.dir/Stuffs/Menu.cpp.s"
+	C:\PROGRA~2\MICROS~2\2019\BUILDT~1\VC\Tools\MSVC\1425~1.286\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\OOPProject.dir\Stuffs\Menu.cpp.s /c K:\Important\Facultate\Sem2\POO\Proiect\OOPProject\Stuffs\Menu.cpp
+<<
+
 # Object files for target OOPProject
 OOPProject_OBJECTS = \
 "CMakeFiles\OOPProject.dir\main.cpp.obj" \
@@ -362,7 +381,8 @@ OOPProject_OBJECTS = \
 "CMakeFiles\OOPProject.dir\Stuffs\JsonHelper.cpp.obj" \
 "CMakeFiles\OOPProject.dir\Stuffs\AudioRecording.cpp.obj" \
 "CMakeFiles\OOPProject.dir\Stuffs\Sound.cpp.obj" \
-"CMakeFiles\OOPProject.dir\Stuffs\Note.cpp.obj"
+"CMakeFiles\OOPProject.dir\Stuffs\Note.cpp.obj" \
+"CMakeFiles\OOPProject.dir\Stuffs\Menu.cpp.obj"
 
 # External object files for target OOPProject
 OOPProject_EXTERNAL_OBJECTS =
@@ -382,6 +402,7 @@ OOPProject.exe: CMakeFiles\OOPProject.dir\Stuffs\JsonHelper.cpp.obj
 OOPProject.exe: CMakeFiles\OOPProject.dir\Stuffs\AudioRecording.cpp.obj
 OOPProject.exe: CMakeFiles\OOPProject.dir\Stuffs\Sound.cpp.obj
 OOPProject.exe: CMakeFiles\OOPProject.dir\Stuffs\Note.cpp.obj
+OOPProject.exe: CMakeFiles\OOPProject.dir\Stuffs\Menu.cpp.obj
 OOPProject.exe: CMakeFiles\OOPProject.dir\build.make
 OOPProject.exe: lib\gtestd.lib
 OOPProject.exe: lib\gtest_maind.lib
@@ -389,7 +410,7 @@ OOPProject.exe: lib\gmockd.lib
 OOPProject.exe: lib\gmock_maind.lib
 OOPProject.exe: lib\gtestd.lib
 OOPProject.exe: CMakeFiles\OOPProject.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=K:\Important\Facultate\Sem2\POO\Proiect\OOPProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable OOPProject.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=K:\Important\Facultate\Sem2\POO\Proiect\OOPProject\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable OOPProject.exe"
 	"C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\OOPProject.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~2\2019\BUILDT~1\VC\Tools\MSVC\1425~1.286\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\OOPProject.dir\objects1.rsp @<<
  /out:OOPProject.exe /implib:OOPProject.lib /pdb:K:\Important\Facultate\Sem2\POO\Proiect\OOPProject\cmake-build-debug\OOPProject.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:console  lib\gtestd.lib lib\gtest_maind.lib lib\gmockd.lib lib\gmock_maind.lib lib\gtestd.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<

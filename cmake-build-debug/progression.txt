@@ -1,0 +1,4 @@
+
+Chord name: Am
+Notes: A, C, E, 
+Intervals: P1, m3, P5, 

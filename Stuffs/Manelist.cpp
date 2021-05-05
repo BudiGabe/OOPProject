@@ -6,7 +6,7 @@
 const string Manelist::YOUTUBE = "https://www.youtube.com/watch?v=";
 
 Manelist::Manelist(const string &name, const vector<Song> &songs, const vector<Podcast> &podcasts, int followers,
-                   int valoare) : Artist(name, songs, podcasts, followers), valoare(valoare) {}
+                   long long valoare) : Artist(name, songs, podcasts, followers), valoare(valoare) {}
 
 Manelist::Manelist(const Manelist &manelist) : Artist(manelist) {
     this->valoare = manelist.valoare;
@@ -14,11 +14,11 @@ Manelist::Manelist(const Manelist &manelist) : Artist(manelist) {
 
 Manelist::~Manelist()= default;
 
-int Manelist::getValoare() const {
+long long Manelist::getValoare() const {
     return valoare;
 }
 
-void Manelist::setValoare(int valoare) {
+void Manelist::setValoare(long long valoare) {
     this->valoare = valoare;
 }
 
@@ -52,6 +52,10 @@ istream &Manelist::virtualRead(istream &in) {
 
 void Manelist::playManea() {
     vector<string> maneleIds = JsonHelper::getYoutubeIds("../res/manele.json", "\"[a-zA-Z0-9]{11}\"");
+    ofstream fout("manele.out");
+    for(string id: maneleIds) {
+        fout << id << endl;
+    }
     string randomManea = maneleIds[RandomHelper::getRandomNumInRange(0, maneleIds.size())];
     std::system(("start " + YOUTUBE + randomManea).c_str());
 }

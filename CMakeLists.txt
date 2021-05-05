@@ -17,7 +17,7 @@ add_executable(OOPProject
         Stuffs/RandomHelper.h
         Google_tests/ChordTest.cpp
         Google_tests/SongTest.cpp
-        Google_tests/RandomGeneratorsTest.cpp Stuffs/TraditionalSong.cpp Stuffs/TraditionalSong.h Stuffs/Manelist.cpp Stuffs/Manelist.h Stuffs/JsonHelper.cpp Stuffs/JsonHelper.h Stuffs/AudioRecording.cpp Stuffs/AudioRecording.h Stuffs/Sound.cpp Stuffs/Sound.h Stuffs/Note.cpp Stuffs/Note.h)
+        Google_tests/RandomGeneratorsTest.cpp Stuffs/TraditionalSong.cpp Stuffs/TraditionalSong.h Stuffs/Manelist.cpp Stuffs/Manelist.h Stuffs/JsonHelper.cpp Stuffs/JsonHelper.h Stuffs/AudioRecording.cpp Stuffs/AudioRecording.h Stuffs/Sound.cpp Stuffs/Sound.h Stuffs/Note.cpp Stuffs/Note.h Stuffs/Menu.cpp Stuffs/Menu.h)
 
 add_subdirectory(Google_tests)
 #include googletest/include dir
